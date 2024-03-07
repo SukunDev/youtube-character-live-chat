@@ -2,12 +2,13 @@
 
 import Character from "@/components/character";
 import { useThemeContext } from "@/components/provider";
-import useLive from "@/hooks/useLive";
+import useStream from "@/hooks/useStream";
+
 import React from "react";
 
 export default function Live({ params }) {
-  const { setChannelId } = useLive(params.slug);
   const { users } = useThemeContext();
+  useStream({ params });
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden bg-black">

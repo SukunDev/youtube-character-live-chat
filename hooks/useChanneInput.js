@@ -82,7 +82,7 @@ function useChanneInput() {
       } else {
         try {
           const response = await axios.get(
-            `/api/getchannelid?url=${encodeURIComponent(link)}`
+            `/api/getChannelId?url=${encodeURIComponent(link)}`
           );
           if (response.data.status) {
             router.push(`/live/${response.data.channelId}`);
@@ -100,7 +100,7 @@ function useChanneInput() {
       const username = link.replace(regex, "").replace("\\", "");
       try {
         const response = await axios.get(
-          `/api/getchannelid?url=${encodeURIComponent(
+          `/api/getChannelId?url=${encodeURIComponent(
             "https://www.youtube.com/@" + username
           )}`
         );
