@@ -21,7 +21,7 @@ export default function Character({ user }) {
         }}
         alt={user.author.name}
       />
-      <div className="absolute inset-x-0 bottom-0 mx-auto text-white w-fit text-nowrap">
+      <div className="absolute inset-x-0 bottom-0 mx-auto text-xs text-white w-fit text-nowrap font-pixeloid-bold">
         <p>
           {user.author.name}{" "}
           {user.isMembership ? (
@@ -36,8 +36,8 @@ export default function Character({ user }) {
         </p>
       </div>
       {message.length > 0 ? (
-        <div className="absolute inset-x-0 mx-auto bottom-7 w-fit">
-          <div className="bg-white rounded-xl px-2 py-0.5 max-w-64 min-w-32 text-xs line-clamp-2 text-center text-black">
+        <div className="absolute inset-x-0 mx-auto bottom-1 w-fit">
+          <div className="text-xs bubble medium bottom font-pixeloid-bold line-clamp-2">
             <p>
               {message.map((item, idx) =>
                 item.text ? (
@@ -53,7 +53,6 @@ export default function Character({ user }) {
               )}
             </p>
           </div>
-          <div className="absolute inset-x-0 mx-auto -bottom-2 w-0 h-0 border-l-[7px] border-l-transparent border-t-[9px] border-t-white border-r-[7px] border-r-transparent"></div>
         </div>
       ) : (
         ""

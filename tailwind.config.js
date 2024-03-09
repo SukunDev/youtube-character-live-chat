@@ -13,6 +13,7 @@ module.exports = {
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
+      "pixeloid-bold": ["var(--font-pixeloid-bold)"],
     },
   },
   plugins: [],

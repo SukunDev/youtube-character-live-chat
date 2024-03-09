@@ -11,7 +11,7 @@ export default function Live({ params }) {
   useStream({ params });
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden bg-black">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       <div className="relative flex flex-col h-screen">
         {users.map((user) => (
           <Character key={user.author.channelId} user={user} />
