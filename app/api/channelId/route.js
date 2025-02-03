@@ -18,6 +18,7 @@ export async function GET(request) {
     const result = getOptionsFromLivePage(response.data);
 
     return Response.json({
+      text: response.data.toString(),
       status: true,
       result,
     });
@@ -25,6 +26,7 @@ export async function GET(request) {
     return Response.json({
       status: false,
       message: error.toString(),
+      text: response.data.toString(),
     });
   }
 }
