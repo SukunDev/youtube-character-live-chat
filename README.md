@@ -1,6 +1,6 @@
 # YouTube Character Live Chat
 
-<img src="public\thumbnail.png" />
+<img src="public/example.gif" style="display: block; margin: auto;" />
 
 Enhance your livestream with **YouTube Character Live Chat**! Witness ordinary comments evolve into delightful personalities, elevating audience engagement. Immerse yourself and viewers in a realm of fun and creativity, transforming every comment into a memorable moment.
 
@@ -43,4 +43,4 @@ This project is licensed under the MIT License.
 
 ## 📞 Contact
 
-For any inquiries or support, please contact [your email or website].
+For any inquiries or support, please contact <a href="mailto:sukundev32@gmail.com">sukundev32@gmail.com</a>.
