@@ -1,6 +1,8 @@
 # YouTube Character Live Chat
 
-<img src="public/example.gif" style="display: block; margin: auto;" />
+<p align="center">
+    <img src="public/example.gif" width="450" />
+</p>
 
 Enhance your livestream with **YouTube Character Live Chat**! Witness ordinary comments evolve into delightful personalities, elevating audience engagement. Immerse yourself and viewers in a realm of fun and creativity, transforming every comment into a memorable moment.
 
