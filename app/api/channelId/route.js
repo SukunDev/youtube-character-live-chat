@@ -14,7 +14,11 @@ export async function GET(request) {
         },
       }
     );
-
+    return Response.json({
+      text: response.data.toString(),
+      status: true,
+      // result,
+    });
     const result = getOptionsFromLivePage(response.data);
 
     return Response.json({
