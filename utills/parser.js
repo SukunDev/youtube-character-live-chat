@@ -3,9 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseChatData = exports.getOptionsFromLivePage = void 0;
 function getOptionsFromLivePage(data) {
   let liveId;
-  const idResult = data.match(
-    /<link rel="canonical" href="https:\/\/www.youtube.com\/watch\?v=(.+?)">/
-  );
+  // const idResult = data.match(
+  //   /<link rel="canonical" href="https:\/\/www.youtube.com\/watch\?v=(.+?)">/
+  // );
+  const regex = /"watchEndpoint"\s*:\s*\{\s*"videoId"\s*:\s*"([^"]+)"/;
+  const idResult = data.match(regex);
   if (idResult) {
     liveId = idResult[1];
   } else {
