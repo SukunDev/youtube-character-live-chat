@@ -26,7 +26,7 @@ Enhance your livestream with **YouTube Character Live Chat**! Witness ordinary c
    ```
 3. Run the application:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## 🛠️ Usage
